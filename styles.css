@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation: moveColor 4s infinite linear;
+}
+
+@keyframes moveColor {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: blue;
+  }
+  25% {
+    left: 300px;
+    top: 0;
+    background-color: red;
+  }
+  50% {
+    left: 300px;
+    top: -300px;
+    background-color: green;
+  }
+  75% {
+    left: 0;
+    top: -300px;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: blue;
+  }
+}
